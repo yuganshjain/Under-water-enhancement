@@ -7,9 +7,13 @@ Note that the color correction method used in this code assumes that the average
 
 2. Two additional methods for underwater image enhancement: newclahe1.m
 This code includes four different methods for underwater image enhancement:
+
 Method 1: CLAHE in HSV color space. This method enhances the contrast of the image by applying CLAHE to the V channel of the HSV color space.
+
 Method 2: Adaptive gamma correction in LAB color space. This method corrects for the color shift caused by absorption and scattering of light in water by applying adaptive gamma correction to the L channel of the LAB color space.
+
 Method 3: Color correction using gray world assumption. This method corrects the color balance of the image using the gray world assumption, which assumes that on average, the world is gray and that the three color channels should have the same mean intensity.
+
 Method 4: Histogram equalization in RGB color space. This method enhances the contrast of the image by applying histogram equal
 
 
