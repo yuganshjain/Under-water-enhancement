@@ -39,4 +39,5 @@ After the interpolation step, the results are displayed using four figures: the 
 9. Code with Retinex image improvement technique added (newclahe8.m)
 10. updated code that includes gamma correction and super resolution: (newclahe9.m)
 11. This code applies wavelet fusion technique to enhance the details of the color-corrected image. The wavelet coefficients of the color channels are fused using maximum absolute value and sign rule. Finally, the fused coefficients are inverse transformed to obtain the enhanced image.(wavelet.m)
+12. here's the modified code that applies both Retinex and Wavelet fusion for image enhancement (fusion.m)
 
