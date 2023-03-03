@@ -37,3 +37,4 @@ After the interpolation step, the results are displayed using four figures: the 
 
 8. This code loads an underwater image, applies CLAHE to enhance contrast, then applies joint CLAHE to further enhance contrast. It corrects color using the gray world assumption and reduces color cast using DCP. Finally, it displays the original image, the CLAHE enhanced image, the color-corrected image, and the DCP enhanced image. The oldresults function is used to compare the original image to the enhanced image. (newclahe7.m)
 Code with Retinex image improvement technique added (newclahe8.m)
+updated code that includes gamma correction and super resolution: (newclahe9.m)
