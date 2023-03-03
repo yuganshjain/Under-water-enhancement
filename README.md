@@ -36,5 +36,7 @@ After the interpolation step, the results are displayed using four figures: the 
 7. Note that I added an additional figure to display the USM-enhanced image, and I modified the joint CLAHE section to use the YCbCr color space instead of the HSV color space used in the original code. The new code should display five figures: the original image, the CLAHE-enhanced image, the USM-enhanced image, the joint CLAHE-enhanced image, and the color-corrected image. (newclahe6.m)
 
 8. This code loads an underwater image, applies CLAHE to enhance contrast, then applies joint CLAHE to further enhance contrast. It corrects color using the gray world assumption and reduces color cast using DCP. Finally, it displays the original image, the CLAHE enhanced image, the color-corrected image, and the DCP enhanced image. The oldresults function is used to compare the original image to the enhanced image. (newclahe7.m)
-Code with Retinex image improvement technique added (newclahe8.m)
-updated code that includes gamma correction and super resolution: (newclahe9.m)
+9. Code with Retinex image improvement technique added (newclahe8.m)
+10. updated code that includes gamma correction and super resolution: (newclahe9.m)
+11. This code applies wavelet fusion technique to enhance the details of the color-corrected image. The wavelet coefficients of the color channels are fused using maximum absolute value and sign rule. Finally, the fused coefficients are inverse transformed to obtain the enhanced image.(wavelet.m)
+
