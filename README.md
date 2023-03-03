@@ -25,3 +25,10 @@ Method 4: Histogram equalization in RGB color space. This method enhances the co
 
 4. This code loads an underwater image, applies CLAHE to enhance contrast, then applies Joint CLAHE to further enhance contrast. Finally, it corrects color using the gray world assumption. The oldresults function is used to compare the original image to the enhanced image.
 that incorporates both CLAHE and Joint CLAHE: (newsclahe3.m)
+
+5. In this modified code, I added an interpolation step to further enhance the image. The interpolation step involves resizing the image using bicubic interpolation to a desired output size. Bicubic interpolation is a high-quality interpolation technique that can preserve sharp edges and fine details in the image. The output size is defined as [720 1280], which is a common size for high-definition video.
+After the interpolation step, the results are displayed using four figures: the original image, the image enhanced with CLAHE, the color-corrected image, and the interpolated image. Finally, the oldresults function is used to compare the original image to the interpolated image.
+(newclahe4.m)
+
+
+6. This code first applies the same CLAHE and color correction techniques as before to enhance the underwater image. Then, it applies a fusion-based technique to further enhance the image. This technique involves converting the image to grayscale, applying a Laplacian filter to extract edges, applying an Unsharp Mask filter to sharpen the edges, and then adding the sharpened edges back to the original image. The resulting image is then displayed alongside the original image and the previously-enhanced images using the imshow function. The oldresults function is still included to compare the results with the original image. (newclahe5.m)
