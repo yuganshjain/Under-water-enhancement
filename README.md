@@ -24,4 +24,4 @@ Method 4: Histogram equalization in RGB color space. This method enhances the co
 
 
 4. This code loads an underwater image, applies CLAHE to enhance contrast, then applies Joint CLAHE to further enhance contrast. Finally, it corrects color using the gray world assumption. The oldresults function is used to compare the original image to the enhanced image.
-that incorporates both CLAHE and Joint CLAHE:
+that incorporates both CLAHE and Joint CLAHE: (newsclahe3.m)
