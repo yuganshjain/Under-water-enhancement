@@ -1,8 +1,8 @@
 % Define the homomorphic filter function
 function high_pass = homomorphic_filter(input_image)
 % Set filter parameters
-cutoff_freq = 10;
-sigma = 10;
+cutoff_freq = 34;
+sigma = 12;
 
 % Convert the input image to logarithmic scale
 log_image = log(1 + input_image);
