@@ -1,7 +1,7 @@
 % Define the MSRCR function
 function output = msrcr(input_image, alpha, beta, gamma)
 % Set filter parameters
-eps = 1e-3;
+eps = 1e-6;
 
 % Convert the input image to logarithmic scale
 log_image = log(1 + input_image);
