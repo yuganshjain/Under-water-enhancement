@@ -13,7 +13,7 @@ high_pass = homomorphic_filter(input_image);
 if any(size(high_pass) < 64)
     retinex_output = high_pass;
 else
-    retinex_pyramid = msrcr(high_pass, 3, 3, 3);
+    retinex_pyramid = msrcr(high_pass, 125, 12, 0.97);
     retinex_output = cat(3, retinex_pyramid{:});
 end
 
@@ -25,7 +25,7 @@ end
 
 % Step 2: Calculate the weight coefficients
 % Calculate the dark channel prior of the fused image
-dark_channel = get_dark_channel(fused_image, 31);
+dark_channel = get_dark_channel(fused_image, 3);
 wDCP = exp(-(dark_channel .^ 2));
 
 % Calculate the weight coefficients for the second fusion step
